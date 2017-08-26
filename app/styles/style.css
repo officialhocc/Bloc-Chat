@@ -2,9 +2,13 @@
 .new-room-button {
     border: 1px solid black;
     padding: 1rem;
-    margin-left: 0.5rem;
-}
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
 
+.new-room-button:hover {
+    cursor: pointer;
+}
 .room-nav {
     background-color: lightgray;
     position: fixed;
@@ -12,6 +16,8 @@
     top: 0px;
     left: 0px;
     height: 100%;
+    text-align: left;
+    padding-left: 5px;
 
 }
 
@@ -26,9 +32,13 @@
       color: #bbdefb
    }
 }
+.room-name {
+    margin-top: 2rem;
+}
+.room-name:hover {
+    cursor: pointer;
+  }
 
-h3{
+.room-name{
   animation: color-animation 3s infinite linear alternate;
-
-
 }
