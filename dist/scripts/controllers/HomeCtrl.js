@@ -1,13 +1,17 @@
+
 (function() {
-     function HomeCtrl(Room) {
-         var ctrl = this;
+    function HomeCtrl(Room, $uibModal) {
+        this.rooms = Room.all;
+        this.addRoom = function() {
+            $uibModal.open({
+                templateUrl: '/templates/modal.html',
+                size: 'sm',
+                controller: 'ModalCtrl as modal'
+            });
+        }
+    }
 
-         ctrl.test = 'Bloc Chat';
-
-         ctrl.rooms = Room.all;
-     }
-
-     angular
-         .module('blocChat')
-         .controller('HomeCtrl', ['Room', HomeCtrl]);
+    angular
+        .module('blocChat')
+        .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
 })();
