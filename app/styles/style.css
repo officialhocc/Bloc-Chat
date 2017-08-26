@@ -57,7 +57,8 @@
     font-size: 16px;
     cursor: url('../../assets/images/link.cur'), default;
 }
-html {
+
+body {
 	cursor: url('../../assets/images/alternate.cur'), default;
 }
 .in{
@@ -65,4 +66,22 @@ html {
 }
 h1{
   padding-left: 15%;
+}
+
+.message-field {
+    bottom: 0;
+    padding-bottom: 5px;
+    position: fixed;
+}
+.btn-new-message{
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  font-size: 16px;
+  cursor: url('../../assets/images/link.cur'), default;
+}
+.message-box {
+height: 35px;
+cursor: url('../../assets/images/text.cur'), default;
 }
